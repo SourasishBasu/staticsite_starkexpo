@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout the files
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
@@ -24,7 +24,7 @@ jobs:
           TARGET: ${{ secrets.TARGET_DIR }}
 
       - name: Executing remote ssh commands using ssh key
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@v1.0.0
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
