@@ -34,4 +34,4 @@ jobs:
             sudo apt-get install -y apache2
             sudo systemctl enable --now apache2
             cd home
-            find . -type f -not -name README.md -exec cp {} /var/www/html \;
+            sudo find . -type f -not -name README.md -exec cp {} /var/www/html \;
