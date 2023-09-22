@@ -32,7 +32,6 @@ jobs:
           script: |
             sudo apt-get -y update
             sudo apt-get install -y apache2
-            sudo systemctl start apache2
-            sudo systemctl enable apache2
+            sudo systemctl enable --now apache2
             cd home
-            sudo mv * /var/www/html
+            find . -type f -not -name README.md -exec cp {} /var/www/html \;
