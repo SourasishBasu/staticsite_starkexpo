@@ -35,4 +35,4 @@ jobs:
             sudo systemctl start apache2
             sudo systemctl enable apache2
             cd home
-            sudo find . -type f -not -name README.md -exec cp {} /var/www/html
+            sudo mv * /var/www/html
