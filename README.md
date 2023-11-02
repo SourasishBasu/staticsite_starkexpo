@@ -123,3 +123,11 @@ Fork this repository. Inside your forked repo follow these steps:
   
   In the above block we have defined our job with name **Deploy to EC2** and enforced it to run on latest Ubuntu version. In order to deploy the code to our server and change the files on it, we need to access the EC2 instance using `ssh`. This workflow ensures that these actions only run when we push our changes to `main` branch.
 </details>
+
+Before Changes             |  After Changes
+:-------------------------:|:-------------------------:
+![Imgur](http://i.imgur.com/231Phxj.png)  |  ![Imgur](https://i.imgur.com/odxHUzJ.png)
+
+
+
+
